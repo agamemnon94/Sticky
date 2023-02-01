@@ -1,0 +1,65 @@
+/******   reset  *******/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/********************/
+/*** GENERALITES  ***/
+/********************/
+html {
+  background: white;
+  font-size: 62.5%;
+}
+body {
+  min-height: 300vh;
+  font-family: "Spartan", sans-serif;
+  background: #333;
+  padding-top: 110px;
+}
+/*******************/
+/***** HEADER ******/
+/*******************/
+
+/******************/
+/****** MAIN ******/
+/******************/
+h1 {
+  text-align: center;
+  font-size: calc(3vmin + 30px);
+  color: coral;
+  padding: 50px 0;
+}
+
+.column {
+  /* background: #000; */
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+.row {
+  display: flex;
+}
+
+.heading_content {
+  flex-grow: 1;
+}
+.heading_content h3 {
+  font-size: 35px;
+  padding: 0 15px;
+  color: #f1f1f1;
+  position: sticky;
+  top: 90px;
+}
+
+img {
+  width: 500px;
+  max-width: 500px;
+  max-height: 350px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #000;
+}
