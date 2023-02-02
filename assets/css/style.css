@@ -16,56 +16,50 @@ html {
   font-size: 62.5%;
 }
 body {
-  min-height: 300vh;
+  min-height: 200vh;
   font-family: "Spartan", sans-serif;
   background: #333;
-  padding-top: 110px;
+  padding-top: 100px;
 }
+
+/******************/
+/****** MAIN ******/
+/******************/
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 90px;
-}
-/******************/
-/****** MAIN ******/
-/******************/
-h1 {
-  text-align: center;
-  font-size: calc(3vmin + 30px);
-  color: coral;
-  text-shadow: 8px 8px 15px #000;
-  padding: 50px 0;
+  gap: 100px;
 }
 
-.column {
-  /* background: #000; */
-  /* max-width: 900px; */
-  /* margin: 50px auto; */
+h1 {
+  text-align: center;
+  /* font-size: calc(3vmin + 30px); */
+  font-size: clamp(3.3rem, 8vw, 6rem);
+  color: coral;
+  text-shadow: 8px 8px 15px #000;
 }
 
 .row {
   display: flex;
 }
 
-.heading_content {
-  /* flex-grow: 1; */
-}
+/* .heading_content {
+  flex-grow: 1;
+} */
 .heading_content h3 {
-  font-size: 35px;
+  font-size: clamp(20px, 4vw, 35px);
   margin-right: 20px;
   padding: 0 15px;
   color: #f1f1f1;
   position: sticky;
   top: 90px;
-  text-shadow: 8px 8px 15px #000;
+  text-shadow: 8px -8px 15px #000;
   writing-mode: vertical-lr;
 }
 
 img {
-  width: 500px;
-  max-width: 500px;
-  max-height: 350px;
+  width: clamp(200px, 60vw, 600px);
   border-radius: 8px;
   box-shadow: 0 0 15px #000;
 }
